@@ -129,6 +129,34 @@
             font-size: 11px;
             color: #999;
         }
+
+        /* Ads Section Styles */
+        .ads-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .ad-block {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        @media (max-width: 800px) {
+            .ad-banner, .ad-hpf {
+                max-width: 100vw !important;
+            }
+        }
+        @media (max-width: 500px) {
+            .ad-block {
+                max-width: 98vw !important;
+            }
+            .ad-link a {
+                font-size: 14px;
+                padding: 8px 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -173,43 +201,59 @@
         </div>
     </div>
 
-<!-- إعلانات EffectiveGateCPM و HighPerformanceFormat -->
-<script src="https://pl25504352.effectivegatecpm.com/14/fb/eb/14fbebcf51bcf0a24f5772006d2e91f2.js"></script>
-<!-- إعلان مباشر -->
-<a href="https://www.effectivegatecpm.com/qgbaanbku?key=9ed0d5674fbcc4874a0d6c8fa5d22de1" target="_blank" style="display:block;margin:10px auto;text-align:center;">ad</a>
-<!-- إعلان invoke.js مع الحاوية -->
-<script async="async" data-cfasync="false" src="https://pl25504859.effectivegatecpm.com/48a77d4b85f31c361a372b732987e7c6/invoke.js"></script>
-<div id="container-48a77d4b85f31c361a372b732987e7c6" style="margin:10px auto;text-align:center;"></div>
-<!-- HighPerformanceFormat إعلانات -->
-<script>
-  atOptions = {
-    'key' : '27aea5c29c5c2ab066f2e96ca9163aca',
-    'format' : 'iframe',
-    'height' : 60,
-    'width' : 468,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/27aea5c29c5c2ab066f2e96ca9163aca/invoke.js"></script>
-<script>
-  atOptions = {
-    'key' : 'c88e10107cb38203c39148e3a793f186',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/c88e10107cb38203c39148e3a793f186/invoke.js"></script>
-<script>
-  atOptions = {
-    'key' : '99319cdea5e304f13a4306bbc7701e33',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/99319cdea5e304f13a4306bbc7701e33/invoke.js"></script>
+<!-- Ads Section: EffectiveGateCPM & HighPerformanceFormat -->
+<div class="ads-wrapper">
+    <!-- Banner Ad 1 -->
+    <div class="ad-block ad-banner" style="margin: 20px auto; max-width: 728px; text-align: center;">
+        <script src="https://pl25504352.effectivegatecpm.com/14/fb/eb/14fbebcf51bcf0a24f5772006d2e91f2.js"></script>
+    </div>
+    <!-- Direct Link Ad -->
+    <div class="ad-block ad-link" style="margin: 20px auto; text-align: center;">
+        <a href="https://www.effectivegatecpm.com/qgbaanbku?key=9ed0d5674fbcc4874a0d6c8fa5d22de1" target="_blank" style="display:inline-block;font-size:16px;color:#fff;background:#c9184a;padding:10px 30px;border-radius:8px;text-decoration:none;">Sponsored Ad</a>
+    </div>
+    <!-- Invoke.js Ad with Container -->
+    <div class="ad-block ad-invoke" style="margin: 20px auto; max-width: 468px; text-align: center;">
+        <script async="async" data-cfasync="false" src="https://pl25504859.effectivegatecpm.com/48a77d4b85f31c361a372b732987e7c6/invoke.js"></script>
+        <div id="container-48a77d4b85f31c361a372b732987e7c6"></div>
+    </div>
+    <!-- HighPerformanceFormat Ads -->
+    <div class="ad-block ad-hpf" style="margin: 20px auto; max-width: 468px; text-align: center;">
+        <script>
+          atOptions = {
+            'key' : '27aea5c29c5c2ab066f2e96ca9163aca',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        </script>
+        <script src="https://www.highperformanceformat.com/27aea5c29c5c2ab066f2e96ca9163aca/invoke.js"></script>
+    </div>
+    <div class="ad-block ad-hpf" style="margin: 20px auto; max-width: 300px; text-align: center;">
+        <script>
+          atOptions = {
+            'key' : 'c88e10107cb38203c39148e3a793f186',
+            'format' : 'iframe',
+            'height' : 250,
+            'width' : 300,
+            'params' : {}
+          };
+        </script>
+        <script src="https://www.highperformanceformat.com/c88e10107cb38203c39148e3a793f186/invoke.js"></script>
+    </div>
+    <div class="ad-block ad-hpf" style="margin: 20px auto; max-width: 728px; text-align: center;">
+        <script>
+          atOptions = {
+            'key' : '99319cdea5e304f13a4306bbc7701e33',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+        </script>
+        <script src="https://www.highperformanceformat.com/99319cdea5e304f13a4306bbc7701e33/invoke.js"></script>
+    </div>
+</div>
+
 </body>
 </html>
